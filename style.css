@@ -67,10 +67,10 @@ main{
 .modal {
     display: none;
     position: fixed;
-    right: 0;
-    left: 0;
     top: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     margin: auto;
     height: 420px;
     width: 350px;
@@ -110,11 +110,11 @@ main{
     cursor: pointer;
 }
 
-.modal-close-btn:disabled{
+/* .modal-close-btn:disabled{
     color: whitesmoke;
     opacity: 0.2;
     cursor: not-allowed;
-}
+} */
 
 .modal-choice-btns{
     margin-top: 10px;
