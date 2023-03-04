@@ -3,6 +3,7 @@ const modalCloseBtn = document.getElementById('modal-close-btn')
 const formEl = document.getElementById('consent-form') 
 const txt = document.getElementById('modal-text')
 
+
 setTimeout(function(){
     modal.style.display = 'inline'
 }, 1500)
@@ -25,7 +26,7 @@ setTimeout(function(){
 
 setTimeout(function(){
     document.getElementById('modal-inner').innerHTML = `
-    <h2>Thanks you sucker! </h2>
+    <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
     <p>We just sold the rights to your eternal soul.</p>
     <div class="idiot-gif">
         <img src="pirate.gif">
@@ -33,8 +34,8 @@ setTimeout(function(){
 ` 
 }, 3000)
 
-const formData = new FormData(formEl)
-    console.log(formEl);
+const formElData = new FormData(formEl)
+    const fullName = formElData.get('fullName') 
 })
 
 
